@@ -32,7 +32,11 @@
 					$Name = $_product->get_name(); // Gets the name for the cronjob 
 					$_product->set_regular_price($new_price); // Set the regular price
 					$_product->set_sale_price($buyback_price); // Set the Sale Price(this item is on sale)
-					$_product->set_price($buyback_price); // Set the price
+					If ($buyback_price > 0){
+						$_product->set_price($buyback_price); // Set the price
+					} else{
+						$_product->set_price($new_price); // Set the price
+					}
 					$_product->save(); // Save to database and sync
 					
 					echo ( "\r \n <br> $sku Updated:  \r \n  <br> $Name \r \n <br> Price Set to: $new_price \r \n <br> Buyback set to: $buyback_price");
