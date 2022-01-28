@@ -1,6 +1,6 @@
 <?php
 
- $input = '/home1/recharj1/public_html/wp-content/uploads/cleanstock.csv'; // LOCATION OF CSV (SEE EXAMPLE CSV FOR FORMATING
+ $input = '/home1/**USENAME**/public_html/wp-content/uploads/cleanstock.csv'; // LOCATION OF CSV (SEE EXAMPLE CSV FOR FORMATING
 
 
 
