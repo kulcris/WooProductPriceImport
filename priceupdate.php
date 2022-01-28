@@ -38,7 +38,7 @@
 						$_product->set_price($new_price); // Set the price
 					}
 					$_product->save(); // Save to database and sync
-					
+				
 					echo ( "\r \n <br> $sku Updated:  \r \n  <br> $Name \r \n <br> Price Set to: $new_price \r \n <br> Buyback set to: $buyback_price");
 					echo ( "\r \n <br> --------------------------------------------------------------------------------------------");
 				
